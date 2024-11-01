@@ -18,7 +18,7 @@
             echo "<td>".$row->descricao."</td>";
             echo "<td>
                     <button onclick= \"location.href='?page=editar&id=".$row->id."';\" class='btn btn-success'>Editar</button>
-                    <button class='btn btn-danger'>Excluir</button>
+                    <button onclick= \"if(confirm('Deseja excluir?')){location.href='?page=gerenciar&acao=excluir&id=".$row->id."';}else{false}\"  class='btn btn-danger'>Excluir</button>
                 </td>";
             echo "</tr>";
         }
