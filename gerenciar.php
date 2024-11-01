@@ -18,8 +18,22 @@
                 echo "<script>location.href='?page=criar';</script>";
             }
             break;
-        case 'label':
-            # code...
+        case 'editar':
+            $titulo = $_POST["titulo"];
+            $descricao = $_POST["descricao"];
+
+            $sql_query = "UPDATE tarefas SET titulo='{$titulo}', descricao='{$descricao}' WHERE id=".$_REQUEST["id"];
+            
+            $res = $conn->query($sql_query);
+
+            if ($res==true){
+                echo "<script>alert('Editação realizada com sucesso')</script>";
+                echo "<script>location.href='index.php';</script>";
+            }else{
+                echo "<script>alert('Não foi possível editar')</script>";
+                echo "<script>location.href='?page=criar';</script>";
+            }
+
             break;
         default:
             # code...
