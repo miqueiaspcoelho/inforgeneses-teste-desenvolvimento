@@ -17,6 +17,6 @@
         <input type="text" name="descricao" class="form-control" value="<?php echo $row->descricao;?>"/>
     </div>
     <div class="mb-3">
-        <button type="submit" class="btn btn-primary">Criar</button>
+        <button type="submit" class="btn btn-primary">Editar</button>
     </div>
 </form>

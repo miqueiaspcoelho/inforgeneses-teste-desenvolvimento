@@ -35,8 +35,17 @@
             }
 
             break;
-        default:
-            # code...
+        case 'excluir':
+            $sql_query = "DELETE FROM tarefas WHERE id=".$_REQUEST["id"];
+            $res = $conn->query($sql_query);
+
+            if ($res==true){
+                echo "<script>alert('Exclusão realizada com sucesso')</script>";
+                echo "<script>location.href='index.php';</script>";
+            }else{
+                echo "<script>alert('Não foi possível excluir')</script>";
+                echo "<script>location.href='?page=criar';</script>";
+            }
             break;
     }
 ?>
