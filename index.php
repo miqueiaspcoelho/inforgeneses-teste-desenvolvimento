@@ -39,6 +39,7 @@
         <div class="row">
             <div class="col mt-5">
                 <?php
+                include("config.php");
                 switch (@$_REQUEST["page"]) {
                     case "criar":
                         include("src/pages/criar-tarefa.php");
@@ -46,6 +47,9 @@
                     case "editar":
                         include("src/pages/editar-tarefa.php");
                         break;
+                    
+                    case "gerenciar":
+                        include("gerenciar.php");
 
                     default:
                         echo "<h1>To do List</h1>";
