@@ -8,7 +8,7 @@ O repositório em questão, tem por objetivo conter o desenvolvimento do softwar
 - editar tarefa
 
 Cada tarefa lista possui 2 botões, um para permitir a edição dos seus campos: titulo e descricao e outro para excluir, esse último possui critério de dupla checagem para evitar exclusões acidentais.
-O banco de dados é: **listatarefas** e consiste em 3 colunas {
+O banco de dados é: **listatarefas** e a tabela é: ***tarefas*** e consiste em 3 colunas {
 id: int: auto_increment
 titulo: varchar(50)
 descricao: varchar(255)
