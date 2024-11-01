@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,25 +30,32 @@
                     <li class="nav-item">
                         <a class="nav-link" href="?page=editar">Editar</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
     </nav>
-    <?php 
-        switch (@$_REQUEST["page"]) {
-            case "criar":
-                include("src/pages/criar-tarefa.php");
-                break;
-            case "editar":
-                include("src/pages/editar-tarefa.php");
-                break;
-            
-            default:
-                echo "To do List";
-                break;
-        }
-    ?>
+    <div class="container">
+        <div class="row">
+            <div class="col mt-5">
+                <?php
+                switch (@$_REQUEST["page"]) {
+                    case "criar":
+                        include("src/pages/criar-tarefa.php");
+                        break;
+                    case "editar":
+                        include("src/pages/editar-tarefa.php");
+                        break;
+
+                    default:
+                        echo "<h1>To do List</h1>";
+                        break;
+                }
+                ?>
+            </div>
+        </div>
+    </div>
+
     <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
