@@ -5,7 +5,7 @@ O repositório em questão, tem por objetivo conter o desenvolvimento do softwar
 - index
 - criar tarefa
 - listar tarefa
-- editar tarefa
+- editar tarefa (lembrando que essa tela só está disponível ao clicar no botão editar)
 
 Cada tarefa lista possui 2 botões, um para permitir a edição dos seus campos: titulo e descricao e outro para excluir, esse último possui critério de dupla checagem para evitar exclusões acidentais.
 O banco de dados é: **listatarefas** e a tabela é: ***tarefas*** e consiste em 3 colunas {
