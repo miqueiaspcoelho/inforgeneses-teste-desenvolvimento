@@ -6,7 +6,8 @@
     $row = $res->fetch_object();
 ?>
 <form action="?page=gerenciar" method="POST">
-    <input type="hidden" name="acao" value="inserir"/>
+    <input type="hidden" name="acao" value="editar"/>
+    <input type="hidden" name="id" value=" <?php echo $row->id; ?>"/>
     <div class="mb-3">
         <label>Titulo</label>
         <input type="text" name="titulo" class="form-control" value="<?php echo $row->titulo;?>"/>
