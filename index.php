@@ -50,7 +50,8 @@
                     
                     case "gerenciar":
                         include("gerenciar.php");
-
+                        break;
+                        
                     default:
                         echo "<h1>To do List</h1>";
                         break;
