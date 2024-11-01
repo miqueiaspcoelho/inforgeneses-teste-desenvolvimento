@@ -17,7 +17,7 @@
             echo "<td>".$row->titulo."</td>";
             echo "<td>".$row->descricao."</td>";
             echo "<td>
-                    <button class='btn btn-success'>Editar</button>
+                    <button onclick= \"location.href='?page=editar&id".$row->id."';\" class='btn btn-success'>Editar</button>
                     <button class='btn btn-danger'>Excluir</button>
                 </td>";
             echo "</tr>";
