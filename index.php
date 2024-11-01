@@ -27,9 +27,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="?page=criar">Criar</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="?page=editar">Editar</a>
-                    </li>
 
                 </ul>
             </div>
