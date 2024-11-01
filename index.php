@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.php">Tarefas</a>
+                        <a class="nav-link active" aria-current="page" href="?page=listar">Tarefas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="?page=criar">Criar</a>
@@ -47,11 +47,13 @@
                     case "editar":
                         include("src/pages/editar-tarefa.php");
                         break;
-                    
+                    case "listar":
+                        include("src/pages/listar-tarefas.php");
+                        break;
                     case "gerenciar":
                         include("gerenciar.php");
                         break;
-                        
+
                     default:
                         echo "<h1>To do List</h1>";
                         break;
